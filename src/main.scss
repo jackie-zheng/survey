@@ -1,0 +1,117 @@
+body {
+  margin: 20px;
+}
+header {
+  border-bottom: 1px solid #eee;
+}
+header img {
+  height: 20px;
+}
+header h3 {
+  font-size: 24px;
+  color: #4D4D4D;
+  letter-spacing: -0.4px;
+  margin: 15px 0;
+}
+$color: #1a1f71;
+/* 单选 radio */
+
+.hide {
+  display: none;
+}
+.control.radio > input {
+  opacity: 0;
+  display: none;
+}
+.control.radio > input:checked ~ .control-indicator {
+  border-color: $color;
+  position: relative;
+
+}
+.control.radio > input:checked ~ .control-indicator::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: $color;
+}
+.control.radio > .control-indicator {
+  display: inline-block;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #afafaf;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.control.radio > * {
+  vertical-align: -3px;
+}
+.answer.radios {
+  margin-left: -15px;
+  padding-left: 10px;
+}
+.form-group {
+  display: inline-block;
+  margin-left: 15px;
+  width: 85px;
+}
+.input-text {
+  background: #FFFFFF;
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 36px;
+    padding:0 10px;
+    font-size: 16px;
+  }
+  input:focus {
+    border-color: $color;
+    outline: 0;
+  }
+}
+.survey-result {
+  margin-top: 80px;
+}
+.notice {
+  text-align: center;
+  font-size: 20px;
+  img {
+    width: 80px;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+.desc {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+.btn {
+  border: 0;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  color: white;
+  background: $color;
+  text-align: center;
+  font-size: 16px;
+}
+.btn.submit {
+  margin-top: 40px;
+  letter-spacing: 15px;
+}
+.btn-about {
+  margin-top: 40px;
+}
+
+.text-spec {
+  color: #32acd9;
+}
