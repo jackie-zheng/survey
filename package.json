@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html -d dist/survey --no-cache",
     "deploy": "npm run build && rsync -rcv --progress dist/ appUser@106.14.168.231:/opt/foxbill-b/frontend/survey"
   },
   "keywords": [],

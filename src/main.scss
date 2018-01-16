@@ -1,6 +1,10 @@
 body {
   margin: 20px;
 }
+button a {
+  text-decoration: none;
+  color: inherit;
+}
 header {
   border-bottom: 1px solid #eee;
 }
