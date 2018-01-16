@@ -1,0 +1,41 @@
+.toastr-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 8px;
+    color: white;
+    z-index: 1000;
+    text-align: center;
+    transform: translate3d(0, -100%, 0);
+}
+.toastr-wrapper.error {
+    background-color: red;
+}
+.toastr-wrapper.success {
+    background-color: green;
+}
+
+.move-in {
+    animation: moveIn .5s forwards
+}
+.move-out {
+    animation: moveOut .5s forwards
+}
+@keyframes moveIn {
+    from {
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes moveOut {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -100%, 0);
+    }
+}

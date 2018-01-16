@@ -1,7 +1,8 @@
 import "./main.scss"
-import { form2Json, formatFormData, getWxInfo, validateForm } from './helper'
-import { ajax } from './ajax'
-import { validationCfg } from './const'
+import { form2Json, formatFormData, getWxInfo, validateForm } from './scripts/helper'
+import { ajax } from './scripts/ajax'
+import { validationCfg } from './scripts/const'
+import { toastr } from './scripts/toastr'
 
 getWxInfo(window)
 let form = document.forms[0]
@@ -13,7 +14,7 @@ form.addEventListener('submit', e => {
   reqParams.openid = window.openid
   let { hasError, errMsg } = validateForm(reqParams, validationCfg)
   if (hasError) {
-    alert(errMsg)
+    toastr.warning(errMsg)
     return
   }
   ajax({

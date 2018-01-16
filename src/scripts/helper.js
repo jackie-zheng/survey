@@ -75,7 +75,6 @@ function validateForm(formData, config) {
       return !formData[key]
     }
   })
-  console.log(config[i])
   return {
     hasError,
     errMsg: config[i].errMsg
