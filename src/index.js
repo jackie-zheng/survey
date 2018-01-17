@@ -1,3 +1,4 @@
+import 'core-js/fn/array/includes'
 import "./main.scss"
 import { form2Json, formatFormData, getWxInfo, validateForm } from './scripts/helper'
 import { ajax } from './scripts/ajax'
